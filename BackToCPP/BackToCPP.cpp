@@ -9,6 +9,11 @@
 #include <iostream>
 using namespace std;
 
+constexpr int a() {
+	return 8;
+}
+
+
 int main()
 {
 	const int i = 1;
@@ -64,6 +69,10 @@ int main()
 
 	(static_cast<const int&>(l));
 	
+
+	const int y = 8;
+	int arr[a()];
+
 
 
 }
